@@ -71,12 +71,36 @@
     <Content Include="App_Data\Customers_log.ldf">
       <DependentUpon>Customers.mdf</DependentUpon>
     </Content>
+    <Content Include="DetailsView.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Grid.aspx" />
+    <Content Include="GridAndDetails.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetailsView.aspx.cs">
+      <DependentUpon>DetailsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailsView.aspx.designer.cs">
+      <DependentUpon>DetailsView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Grid.aspx.cs">
+      <DependentUpon>Grid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grid.aspx.designer.cs">
+      <DependentUpon>Grid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridAndDetails.aspx.cs">
+      <DependentUpon>GridAndDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridAndDetails.aspx.designer.cs">
+      <DependentUpon>GridAndDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
